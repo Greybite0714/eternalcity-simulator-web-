@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap');
-
+        
         body {
             font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: #0b1120;
@@ -22,19 +22,16 @@
             width: 6px;
             height: 6px;
         }
-
         ::-webkit-scrollbar-track {
             background: #1e293b;
         }
-
         ::-webkit-scrollbar-thumb {
             background: #475569;
             border-radius: 3px;
         }
-
-            ::-webkit-scrollbar-thumb:hover {
-                background: #64748b;
-            }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
 
         /* Number input spinner remove */
         input[type="number"]::-webkit-inner-spin-button,
@@ -42,7 +39,6 @@
             -webkit-appearance: none;
             margin: 0;
         }
-
         input[type="number"] {
             -moz-appearance: textfield;
         }
@@ -60,17 +56,15 @@
             text-align: center;
             font-weight: 600;
         }
-
-            .sim-input:focus {
-                outline: none;
-                border-color: #38bdf8;
-                box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
-                background-color: #0f172a;
-            }
-
-            .sim-input:hover {
-                border-color: #64748b;
-            }
+        .sim-input:focus {
+            outline: none;
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
+            background-color: #0f172a;
+        }
+        .sim-input:hover {
+            border-color: #64748b;
+        }
 
         .sim-input-readonly {
             background-color: #0f172a;
@@ -113,37 +107,32 @@
             color: #cbd5e1;
             transition: all 0.2s;
         }
-
-            .toggle-btn:hover {
-                border-color: #38bdf8;
-                color: #ffffff;
-            }
-
-            .toggle-btn input[type="checkbox"] {
-                display: none;
-            }
-
-                .toggle-btn input[type="checkbox"]:checked + span {
-                    color: #38bdf8;
-                    font-weight: 700;
-                }
-
-            .toggle-btn:has(input[type="checkbox"]:checked) {
-                background: rgba(56, 189, 248, 0.15);
-                border-color: #38bdf8;
-                box-shadow: 0 0 8px rgba(56, 189, 248, 0.25);
-            }
+        .toggle-btn:hover {
+            border-color: #38bdf8;
+            color: #ffffff;
+        }
+        .toggle-btn input[type="checkbox"] {
+            display: none;
+        }
+        .toggle-btn input[type="checkbox"]:checked + span {
+            color: #38bdf8;
+            font-weight: 700;
+        }
+        .toggle-btn:has(input[type="checkbox"]:checked) {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: #38bdf8;
+            box-shadow: 0 0 8px rgba(56, 189, 248, 0.25);
+        }
 
         .stat-card {
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             border: 1px solid #334155;
             transition: transform 0.15s ease, border-color 0.15s ease;
         }
-
-            .stat-card:hover {
-                border-color: #38bdf8;
-                transform: translateY(-2px);
-            }
+        .stat-card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+        }
 
         .gear-table th {
             padding: 7px 4px;
@@ -152,15 +141,12 @@
             color: #e2e8f0;
             background: #0f172a;
         }
-
         .gear-table td {
             padding: 3px 2px;
         }
-
         .gear-table tr:nth-child(even) {
             background-color: rgba(255, 255, 255, 0.015);
         }
-
         .gear-table tr:hover {
             background-color: rgba(56, 189, 248, 0.06);
         }
@@ -169,7 +155,7 @@
 <body class="p-2 sm:p-4 text-slate-100 text-xs sm:text-sm min-h-screen flex flex-col justify-between">
 
     <div class="max-w-[1440px] mx-auto w-full flex flex-col gap-3">
-
+        
         <!-- App Title Header -->
         <header class="card-panel bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-slate-700 flex flex-wrap justify-between items-center py-3 px-4 shadow-xl gap-3">
             <div class="flex items-center gap-3">
@@ -306,16 +292,16 @@
 
         <!-- Main Grid Layout -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
-
+            
             <!-- ================= LEFT COLUMN: Character & Stats (4 cols) ================= -->
             <div class="lg:col-span-4 flex flex-col gap-3">
-
+                
                 <!-- 1. 레벨 및 환생 정보 -->
                 <div class="card-panel">
                     <div class="card-header">
                         <i class="fa-solid fa-user-gear text-sky-400"></i> 레벨 및 환생 정보
                     </div>
-
+                    
                     <div class="space-y-2">
                         <!-- 현재 레벨 -->
                         <div class="grid grid-cols-4 gap-2 items-center bg-slate-900/80 p-2 rounded-lg border border-slate-700">
@@ -539,13 +525,13 @@
 
             <!-- ================= RIGHT COLUMN: Weapon, Equipment & Results (8 cols) ================= -->
             <div class="lg:col-span-8 flex flex-col gap-3">
-
+                
                 <!-- 1. 무기 정보 -->
                 <div class="card-panel">
                     <div class="card-header">
                         <i class="fa-solid fa-gun text-rose-400"></i> 무기 정보
                     </div>
-
+                    
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                         <div class="bg-slate-900/80 p-2 rounded-lg border border-slate-700">
                             <label class="text-xs text-slate-300 block mb-1 font-semibold">무기 타입</label>
@@ -596,14 +582,14 @@
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-800/80 text-xs sm:text-sm">
-
+                                
                                 <!-- [방어구 Group] -->
                                 <tr class="bg-indigo-950/60 font-bold text-indigo-200">
                                     <td colspan="6" class="py-1.5 text-left pl-3 text-xs tracking-wider uppercase border-y border-indigo-900/60">
                                         <i class="fa-solid fa-shield-halved mr-1"></i> 방 어 구 (8슬롯)
                                     </td>
                                 </tr>
-
+                                
                                 <tr>
                                     <td class="text-left pl-3 font-bold text-slate-200">모자</td>
                                     <td><input type="number" id="txtCapDef" class="sim-input" oninput="calculateAll()"></td>
@@ -685,7 +671,7 @@
                                         <i class="fa-solid fa-gem mr-1"></i> 액 세 서 리 (9슬롯)
                                     </td>
                                 </tr>
-
+                                
                                 <tr>
                                     <td class="text-left pl-3 font-semibold text-slate-300">환생악세</td>
                                     <td><input type="number" id="txtAccRebornDef" class="sim-input" oninput="calculateAll()"></td>
@@ -775,7 +761,7 @@
                                         <i class="fa-solid fa-feather mr-1"></i> 코 스 튬 / 날 개
                                     </td>
                                 </tr>
-
+                                
                                 <tr>
                                     <td class="text-left pl-3 font-semibold text-slate-300">코스튬</td>
                                     <td><input type="number" id="txtCostumeDefPer" class="sim-input" oninput="calculateAll()"></td>
@@ -952,11 +938,11 @@
 
             const allocatedSum = statHp + statHealth + statStamina + statSkill + statInt + statSpeed;
             const remainStat = totalStat - allocatedSum;
-
+            
             const txtRemainStat = document.getElementById('txtRemainStat');
             const boxRemainStat = document.getElementById('boxRemainStat');
             txtRemainStat.value = remainStat;
-
+            
             if (remainStat < 0) {
                 txtRemainStat.className = "bg-transparent border-0 font-bold text-rose-400 text-right w-16 focus:outline-none animate-pulse";
                 boxRemainStat.className = "bg-rose-950/40 p-2 rounded-lg border border-rose-800 flex justify-between items-center";
@@ -1038,9 +1024,9 @@
             const mainStat = (weaponType === '원거리') ? statSkill : statHealth;
 
             let finalAtk = (weaponDmg * (1.0 + (mainStat / 100.0)) + mainStat)
-                * (1.0 + (totalAtkBonusPer / 100.0))
-                * (1.0 + (atkUnlock / 100.0))
-                * (1.0 + (atkAchieve / 100.0));
+                            * (1.0 + (totalAtkBonusPer / 100.0))
+                            * (1.0 + (atkUnlock / 100.0))
+                            * (1.0 + (atkAchieve / 100.0));
 
             if (isAtkAmp) finalAtk *= 1.2;
             if (isHouseAtk) finalAtk *= 1.05;
@@ -1064,8 +1050,8 @@
             }
 
             let calculatedHp = (baseHpFromStat + totalHp)
-                * (1.0 + (hpUnlock / 100.0))
-                * (1.0 + (hpAchieve / 100.0));
+                                * (1.0 + (hpUnlock / 100.0))
+                                * (1.0 + (hpAchieve / 100.0));
 
             if (isHouseHp) calculatedHp += 500;
             if (isHpBuff1000) calculatedHp += 1000;
@@ -1266,13 +1252,13 @@
             txt.value = JSON.stringify(state, null, 2);
 
             actions.innerHTML = `
-                    <button onclick="copyJsonToClipboard()" class="px-4 py-1.5 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-lg text-xs transition">
-                        <i class="fa-solid fa-copy mr-1"></i> 클립보드 복사
-                    </button>
-                    <button onclick="closeJsonModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-lg text-xs border border-slate-700">
-                        닫기
-                    </button>
-                `;
+                <button onclick="copyJsonToClipboard()" class="px-4 py-1.5 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-lg text-xs transition">
+                    <i class="fa-solid fa-copy mr-1"></i> 클립보드 복사
+                </button>
+                <button onclick="closeJsonModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-lg text-xs border border-slate-700">
+                    닫기
+                </button>
+            `;
 
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -1290,13 +1276,13 @@
             txt.value = '';
 
             actions.innerHTML = `
-                    <button onclick="applyImportedJSON()" class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg text-xs transition">
-                        <i class="fa-solid fa-check mr-1"></i> 세팅 적용
-                    </button>
-                    <button onclick="closeJsonModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-lg text-xs border border-slate-700">
-                        취소
-                    </button>
-                `;
+                <button onclick="applyImportedJSON()" class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg text-xs transition">
+                    <i class="fa-solid fa-check mr-1"></i> 세팅 적용
+                </button>
+                <button onclick="closeJsonModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-lg text-xs border border-slate-700">
+                    취소
+                </button>
+            `;
 
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -1454,1355 +1440,30 @@
             };
 
             container.innerHTML = `
-                    <table class="w-full text-center text-xs border-collapse">
-                        <thead>
-                            <tr class="bg-slate-900 border-b border-slate-800 text-slate-400">
-                                <th class="p-2 text-left pl-3">스탯 항목</th>
-                                <th class="p-2 text-sky-400">${nameA} (A)</th>
-                                <th class="p-2 text-amber-400">${nameB} (B)</th>
-                                <th class="p-2">수치 차이 (B - A)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-800/80">
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">공격력</td><td class="font-bold text-slate-200">${resA.atk}</td><td class="font-bold text-slate-200">${resB.atk}</td><td>${formatDiff(resA.atk, resB.atk)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">방어력</td><td class="font-bold text-slate-200">${resA.def}</td><td class="font-bold text-slate-200">${resB.def}</td><td>${formatDiff(resA.def, resB.def)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">체력 (HP)</td><td class="font-bold text-slate-200">${resA.hp}</td><td class="font-bold text-slate-200">${resB.hp}</td><td>${formatDiff(resA.hp, resB.hp)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">회피율</td><td class="font-bold text-slate-200">${resA.evasion}</td><td class="font-bold text-slate-200">${resB.evasion}</td><td>${formatDiff(resA.evasion, resB.evasion, true)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">치명율</td><td class="font-bold text-slate-200">${resA.crit}</td><td class="font-bold text-slate-200">${resB.crit}</td><td>${formatDiff(resA.crit, resB.crit, true)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">의식회복</td><td class="font-bold text-slate-200">${resA.recovery}</td><td class="font-bold text-slate-200">${resB.recovery}</td><td>${formatDiff(resA.recovery, resB.recovery)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">기술등급</td><td class="font-bold text-slate-200">${resA.skillRank}</td><td class="font-bold text-slate-200">${resB.skillRank}</td><td>${formatDiff(resA.skillRank, resB.skillRank)}</td></tr>
-                        </tbody>
-                    </table>
-                `;
+                <table class="w-full text-center text-xs border-collapse">
+                    <thead>
+                        <tr class="bg-slate-900 border-b border-slate-800 text-slate-400">
+                            <th class="p-2 text-left pl-3">스탯 항목</th>
+                            <th class="p-2 text-sky-400">${nameA} (A)</th>
+                            <th class="p-2 text-amber-400">${nameB} (B)</th>
+                            <th class="p-2">수치 차이 (B - A)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/80">
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">공격력</td><td class="font-bold text-slate-200">${resA.atk}</td><td class="font-bold text-slate-200">${resB.atk}</td><td>${formatDiff(resA.atk, resB.atk)}</td></tr>
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">방어력</td><td class="font-bold text-slate-200">${resA.def}</td><td class="font-bold text-slate-200">${resB.def}</td><td>${formatDiff(resA.def, resB.def)}</td></tr>
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">체력 (HP)</td><td class="font-bold text-slate-200">${resA.hp}</td><td class="font-bold text-slate-200">${resB.hp}</td><td>${formatDiff(resA.hp, resB.hp)}</td></tr>
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">회피율</td><td class="font-bold text-slate-200">${resA.evasion}</td><td class="font-bold text-slate-200">${resB.evasion}</td><td>${formatDiff(resA.evasion, resB.evasion, true)}</td></tr>
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">치명율</td><td class="font-bold text-slate-200">${resA.crit}</td><td class="font-bold text-slate-200">${resB.crit}</td><td>${formatDiff(resA.crit, resB.crit, true)}</td></tr>
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">의식회복</td><td class="font-bold text-slate-200">${resA.recovery}</td><td class="font-bold text-slate-200">${resB.recovery}</td><td>${formatDiff(resA.recovery, resB.recovery)}</td></tr>
+                        <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">기술등급</td><td class="font-bold text-slate-200">${resA.skillRank}</td><td class="font-bold text-slate-200">${resB.skillRank}</td><td>${formatDiff(resA.skillRank, resB.skillRank)}</td></tr>
+                    </tbody>
+                </table>
+            `;
         }
 
         // Initialization
-        window.onload = function () {
-            const profiles = getAllProfiles();
-            if (Object.keys(profiles).length === 0) {
-                profiles['기본 세팅'] = getCurrentInputsState();
-                saveAllProfiles(profiles);
-            } else {
-                refreshProfileDropdown();
-            }
-            calculateAll();
-        };
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이터널시티 종합 시뮬레이터</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap');
-
-        body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #0b1120;
-            color: #f8fafc;
-            font-size: 105%; /* 폰트 크기 5% 확대 */
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #1e293b;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #475569;
-            border-radius: 3px;
-        }
-
-            ::-webkit-scrollbar-thumb:hover {
-                background: #64748b;
-            }
-
-        /* Number input spinner remove */
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        input[type="number"] {
-            -moz-appearance: textfield;
-        }
-
-        /* Compact & High visibility Inputs */
-        .sim-input {
-            background-color: #1e293b;
-            border: 1px solid #475569;
-            color: #ffffff; /* 가독성을 위한 순백색 텍스트 */
-            padding: 4px 6px;
-            font-size: 0.85rem;
-            border-radius: 6px;
-            transition: all 0.15s ease-in-out;
-            width: 100%;
-            text-align: center;
-            font-weight: 600;
-        }
-
-            .sim-input:focus {
-                outline: none;
-                border-color: #38bdf8;
-                box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
-                background-color: #0f172a;
-            }
-
-            .sim-input:hover {
-                border-color: #64748b;
-            }
-
-        .sim-input-readonly {
-            background-color: #0f172a;
-            border-color: #1e293b;
-            color: #cbd5e1;
-            font-weight: 700;
-        }
-
-        .card-panel {
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 10px;
-            padding: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-header {
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: #38bdf8;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 6px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /* Toggle Checkbox styling */
-        .toggle-btn {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-            user-select: none;
-            font-size: 0.8rem;
-            padding: 5px 8px;
-            border-radius: 6px;
-            background: #0f172a;
-            border: 1px solid #475569;
-            color: #cbd5e1; /* 가독성 향상 */
-            transition: all 0.2s;
-        }
-
-            .toggle-btn:hover {
-                border-color: #38bdf8;
-                color: #ffffff;
-            }
-
-            .toggle-btn input[type="checkbox"] {
-                display: none;
-            }
-
-                .toggle-btn input[type="checkbox"]:checked + span {
-                    color: #38bdf8;
-                    font-weight: 700;
-                }
-
-            .toggle-btn:has(input[type="checkbox"]:checked) {
-                background: rgba(56, 189, 248, 0.15);
-                border-color: #38bdf8;
-                box-shadow: 0 0 8px rgba(56, 189, 248, 0.25);
-            }
-
-        /* Stat Indicator animation */
-        .stat-card {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            border: 1px solid #334155;
-            transition: transform 0.15s ease, border-color 0.15s ease;
-        }
-
-            .stat-card:hover {
-                border-color: #38bdf8;
-                transform: translateY(-2px);
-            }
-
-        .gear-table th {
-            padding: 7px 4px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: #e2e8f0; /* 테이블 헤더 텍스트 명도 향상 */
-            background: #0f172a;
-        }
-
-        .gear-table td {
-            padding: 3px 2px;
-        }
-
-        .gear-table tr:nth-child(even) {
-            background-color: rgba(255, 255, 255, 0.015);
-        }
-
-        .gear-table tr:hover {
-            background-color: rgba(56, 189, 248, 0.06);
-        }
-    </style>
-</head>
-<body class="p-2 sm:p-4 text-slate-100 text-xs sm:text-sm min-h-screen flex flex-col justify-between">
-
-    <div class="max-w-[1440px] mx-auto w-full flex flex-col gap-3">
-
-        <!-- App Title Header -->
-        <header class="card-panel bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-slate-700 flex flex-wrap justify-between items-center py-3 px-4 shadow-xl">
-            <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 text-lg shadow-inner">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <div>
-                    <h1 class="text-base sm:text-lg font-extrabold text-white tracking-wide flex items-center gap-2">
-                        이터널시티 종합 시뮬레이터
-                        <span class="text-[11px] bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2 py-0.5 rounded-full font-semibold">v2.7</span>
-                    </h1>
-                    <p class="text-xs text-slate-300">캐릭터 스탯, 해방, 업적 및 버프 실시간 통합 연산기</p>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-2 mt-2 sm:mt-0">
-                <button onclick="resetAll()" class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 shadow-sm">
-                    <i class="fa-solid fa-rotate-left text-rose-400"></i> 초기화
-                </button>
-            </div>
-        </header>
-
-        <!-- Top Key Results Dashboard -->
-        <section class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2">
-            <!-- 공격력 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between relative overflow-hidden group">
-                <div class="absolute -right-2 -bottom-2 text-rose-500/5 text-4xl group-hover:scale-110 transition"><i class="fa-solid fa-fire"></i></div>
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-crosshairs text-rose-400"></i> 공격력
-                </span>
-                <input type="text" id="txtResultAtk" class="bg-transparent border-0 font-extrabold text-rose-400 text-lg sm:text-xl text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0">
-            </div>
-
-            <!-- 방어력 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between relative overflow-hidden group">
-                <div class="absolute -right-2 -bottom-2 text-sky-500/5 text-4xl group-hover:scale-110 transition"><i class="fa-solid fa-shield"></i></div>
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-shield-virus text-sky-400"></i> 방어력
-                </span>
-                <input type="text" id="txtResultDef" class="bg-transparent border-0 font-extrabold text-sky-400 text-lg sm:text-xl text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0">
-            </div>
-
-            <!-- 체력 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between relative overflow-hidden group">
-                <div class="absolute -right-2 -bottom-2 text-emerald-500/5 text-4xl group-hover:scale-110 transition"><i class="fa-solid fa-heart"></i></div>
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-heart-pulse text-emerald-400"></i> 체력 (HP)
-                </span>
-                <input type="text" id="txtResultHp" class="bg-transparent border-0 font-extrabold text-emerald-400 text-lg sm:text-xl text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0">
-            </div>
-
-            <!-- 회피율 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between">
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-person-running text-indigo-400"></i> 회피율
-                </span>
-                <input type="text" id="txtResultEvasion" class="bg-transparent border-0 font-extrabold text-indigo-300 text-base sm:text-lg text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0%">
-            </div>
-
-            <!-- 치명율 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between">
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-bolt text-amber-400"></i> 치명율
-                </span>
-                <input type="text" id="txtResultCrit" class="bg-transparent border-0 font-extrabold text-amber-300 text-base sm:text-lg text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0%">
-            </div>
-
-            <!-- 의식회복 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between">
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-kit-medical text-teal-400"></i> 의식회복
-                </span>
-                <input type="text" id="txtResultRecovery" class="bg-transparent border-0 font-extrabold text-teal-300 text-base sm:text-lg text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0">
-            </div>
-
-            <!-- 기술등급 -->
-            <div class="stat-card p-3 rounded-xl flex flex-col justify-between col-span-2 sm:col-span-1">
-                <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <i class="fa-solid fa-graduation-cap text-purple-400"></i> 기술등급
-                </span>
-                <input type="text" id="txtResultSkillRank" class="bg-transparent border-0 font-extrabold text-purple-300 text-base sm:text-lg text-left focus:outline-none cursor-default p-0 mt-1" readonly value="0">
-            </div>
-        </section>
-
-        <!-- Main Grid Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
-
-            <!-- ================= LEFT COLUMN: Character & Stats (4 cols) ================= -->
-            <div class="lg:col-span-4 flex flex-col gap-3">
-
-                <!-- 1. 레벨 및 환생 정보 -->
-                <div class="card-panel">
-                    <div class="card-header">
-                        <i class="fa-solid fa-user-gear text-sky-400"></i> 레벨 및 환생 정보
-                    </div>
-
-                    <div class="space-y-2">
-                        <!-- 현재 레벨 -->
-                        <div class="grid grid-cols-4 gap-2 items-center bg-slate-900/80 p-2 rounded-lg border border-slate-700">
-                            <label class="font-bold text-slate-200 col-span-1">현재 레벨</label>
-                            <input type="number" id="txtCurrentLevel" class="sim-input col-span-3 font-extrabold text-sky-300 bg-slate-950 text-center text-sm py-1 border-sky-500/50" value="1" min="1" max="160" oninput="calculateAll()">
-                        </div>
-
-                        <!-- 환생 회차별 레벨 -->
-                        <div class="bg-slate-900/60 p-2 rounded-lg border border-slate-800">
-                            <span class="text-xs font-semibold text-slate-300 block mb-1.5">환생 정보 (환생 시 달성 레벨 입력)</span>
-                            <div class="grid grid-cols-5 gap-1.5 text-center">
-                                <div><span class="text-xs text-white font-bold block">1환</span><input type="number" id="txtReborn1" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">2환</span><input type="number" id="txtReborn2" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">3환</span><input type="number" id="txtReborn3" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">4환</span><input type="number" id="txtReborn4" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">5환</span><input type="number" id="txtReborn5" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">6환</span><input type="number" id="txtReborn6" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">7환</span><input type="number" id="txtReborn7" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">8환</span><input type="number" id="txtReborn8" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">9환</span><input type="number" id="txtReborn9" class="sim-input" value="0" oninput="calculateAll()"></div>
-                                <div><span class="text-xs text-white font-bold block">10환</span><input type="number" id="txtReborn10" class="sim-input" value="0" oninput="calculateAll()"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. 누적 스탯 배분 -->
-                <div class="card-panel">
-                    <div class="card-header justify-between">
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-sliders text-amber-400"></i> 스탯 배분</span>
-                        <span class="text-xs text-slate-300 font-normal">(기본 5 ~ 최대 600)</span>
-                    </div>
-
-                    <!-- 총 스탯 & 잔여 스탯 표시 뱃지 -->
-                    <div class="grid grid-cols-2 gap-2 mb-2.5">
-                        <div class="bg-slate-900 p-2 rounded-lg border border-slate-700 flex justify-between items-center">
-                            <span class="text-slate-300 font-semibold">총 스탯</span>
-                            <input type="text" id="txtTotalStat" class="bg-transparent border-0 font-bold text-white text-right w-16 focus:outline-none" readonly value="35">
-                        </div>
-                        <div class="bg-slate-900 p-2 rounded-lg border border-slate-700 flex justify-between items-center" id="boxRemainStat">
-                            <span class="text-slate-300 font-semibold">잔여 스탯</span>
-                            <input type="text" id="txtRemainStat" class="bg-transparent border-0 font-bold text-sky-400 text-right w-16 focus:outline-none" readonly value="0">
-                        </div>
-                    </div>
-
-                    <!-- 스탯 입력 슬롯 -->
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-700">
-                            <span class="font-bold text-slate-200 pl-1 whitespace-nowrap shrink-0 text-xs">생명력</span>
-                            <input type="number" id="txtStatHp" class="sim-input font-bold px-1" value="5" oninput="calculateAll()">
-                        </div>
-                        <div class="flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-700">
-                            <span class="font-bold text-slate-200 pl-1 whitespace-nowrap shrink-0 text-xs">체력</span>
-                            <input type="number" id="txtStatHealth" class="sim-input font-bold px-1" value="5" oninput="calculateAll()">
-                        </div>
-                        <div class="flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-700">
-                            <span class="font-bold text-slate-200 pl-1 whitespace-nowrap shrink-0 text-xs">지구력</span>
-                            <input type="number" id="txtStatStamina" class="sim-input font-bold px-1" value="5" oninput="calculateAll()">
-                        </div>
-                        <div class="flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-700">
-                            <span class="font-bold text-slate-200 pl-1 whitespace-nowrap shrink-0 text-xs">기술</span>
-                            <input type="number" id="txtStatSkill" class="sim-input font-bold px-1" value="5" oninput="calculateAll()">
-                        </div>
-                        <div class="flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-700">
-                            <span class="font-bold text-slate-200 pl-1 whitespace-nowrap shrink-0 text-xs">지능</span>
-                            <input type="number" id="txtStatInt" class="sim-input font-bold px-1" value="5" oninput="calculateAll()">
-                        </div>
-                        <div class="flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-lg border border-slate-700">
-                            <span class="font-bold text-slate-200 pl-1 whitespace-nowrap shrink-0 text-xs">속도</span>
-                            <input type="number" id="txtStatSpeed" class="sim-input font-bold px-1" value="5" oninput="calculateAll()">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. 종족 및 해방 정보 (독립) -->
-                <div class="card-panel">
-                    <div class="card-header">
-                        <i class="fa-solid fa-dna text-purple-400"></i> 종족 & 해방 정보
-                    </div>
-
-                    <div class="space-y-2.5">
-                        <!-- 종족 선택 -->
-                        <div class="flex items-center gap-2 bg-slate-900/90 p-2 rounded-lg border border-slate-700">
-                            <label class="font-bold text-slate-200 w-20">종족 선택</label>
-                            <select id="cmbRace" class="sim-input bg-slate-950 text-slate-100 font-bold cursor-pointer" onchange="calculateAll()">
-                                <option value="휴먼">휴먼 (기본)</option>
-                                <option value="변이">변이 (공격력 +30%, 기본HP -30%)</option>
-                            </select>
-                        </div>
-
-                        <!-- 해방 입력 -->
-                        <div class="bg-slate-900/60 p-2.5 rounded-lg border border-slate-700 space-y-2">
-                            <span class="text-xs font-bold text-purple-300 block border-b border-slate-700 pb-1">
-                                <i class="fa-solid fa-bolt-lightning mr-1"></i> 캐릭터 해방 수치 (%)
-                            </span>
-                            <div class="grid grid-cols-3 gap-2 text-center">
-                                <div>
-                                    <span class="text-xs text-rose-300 font-semibold block mb-1">공격 해방</span>
-                                    <input type="number" id="txtAtkUnlock" class="sim-input" value="0" oninput="calculateAll()">
-                                </div>
-                                <div>
-                                    <span class="text-xs text-sky-300 font-semibold block mb-1">방어 해방</span>
-                                    <input type="number" id="txtDefUnlock" class="sim-input" value="0" oninput="calculateAll()">
-                                </div>
-                                <div>
-                                    <span class="text-xs text-emerald-300 font-semibold block mb-1">체력 해방</span>
-                                    <input type="number" id="txtHpUnlock" class="sim-input" value="0" oninput="calculateAll()">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. 업적 정보 (독립) -->
-                <div class="card-panel">
-                    <div class="card-header">
-                        <i class="fa-solid fa-trophy text-amber-400"></i> 업적 수치 정보
-                    </div>
-
-                    <div class="bg-slate-900/60 p-2.5 rounded-lg border border-slate-700 space-y-2">
-                        <span class="text-xs font-bold text-amber-300 block border-b border-slate-700 pb-1">
-                            <i class="fa-solid fa-medal mr-1"></i> 캐릭터 업적 달성 수치 (%)
-                        </span>
-                        <div class="grid grid-cols-3 gap-2 text-center">
-                            <div>
-                                <span class="text-xs text-rose-300 font-semibold block mb-1">공격 업적</span>
-                                <input type="number" id="txtAtkAchieve" class="sim-input" value="0" oninput="calculateAll()">
-                            </div>
-                            <div>
-                                <span class="text-xs text-sky-300 font-semibold block mb-1">방어 업적</span>
-                                <input type="number" id="txtDefAchieve" class="sim-input" value="0" oninput="calculateAll()">
-                            </div>
-                            <div>
-                                <span class="text-xs text-emerald-300 font-semibold block mb-1">체력 업적</span>
-                                <input type="number" id="txtHpAchieve" class="sim-input" value="0" oninput="calculateAll()">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. 버프 적용 -->
-                <div class="card-panel">
-                    <div class="card-header">
-                        <i class="fa-solid fa-wand-magic-sparkles text-emerald-400"></i> 버프 적용
-                    </div>
-
-                    <div class="space-y-2.5">
-                        <!-- 앰플 버프 -->
-                        <div>
-                            <span class="text-xs font-bold text-slate-300 block mb-1">앰플 버프</span>
-                            <div class="flex gap-2">
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkAtkAmp" onchange="calculateAll()">
-                                    <span>공격력 (1.2배)</span>
-                                </label>
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkDefAmp" onchange="calculateAll()">
-                                    <span>방어력 (1.2배)</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- 하우징 버프 -->
-                        <div>
-                            <span class="text-xs font-bold text-slate-300 block mb-1">하우징 버프</span>
-                            <div class="flex gap-1.5 flex-wrap">
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkHouseAtk" onchange="calculateAll()">
-                                    <span>공격 (5%)</span>
-                                </label>
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkHouseDef" onchange="calculateAll()">
-                                    <span>방어 (5%)</span>
-                                </label>
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkHouseHp" onchange="calculateAll()">
-                                    <span>체력 (+500)</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- 프리미엄 버프 -->
-                        <div>
-                            <span class="text-xs font-bold text-slate-300 block mb-1">프리미엄 버프</span>
-                            <label class="toggle-btn w-full justify-center">
-                                <input type="checkbox" id="chkPremDef" onchange="calculateAll()">
-                                <span>방어력 (20%)</span>
-                            </label>
-                        </div>
-
-                        <!-- 체력 추가 버프 -->
-                        <div>
-                            <span class="text-xs font-bold text-slate-300 block mb-1">고정 체력 버프</span>
-                            <div class="flex gap-2">
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkHpBuff1000" onchange="calculateAll()">
-                                    <span>체력 (+1000)</span>
-                                </label>
-                                <label class="toggle-btn flex-1 justify-center">
-                                    <input type="checkbox" id="chkHpBuff2000" onchange="calculateAll()">
-                                    <span>체력 (+2000)</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- 챔피언쉽 공격력 버프 -->
-                        <div class="pt-1.5 border-t border-slate-800 flex items-center justify-between">
-                            <span class="text-xs font-bold text-slate-200">챔피언쉽 공격력 (%)</span>
-                            <input type="number" id="txtChampAtkBuff" class="sim-input w-24 text-center font-bold text-amber-400" value="0" step="0.1" oninput="calculateAll()">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- ================= RIGHT COLUMN: Weapon, Equipment & Results (8 cols) ================= -->
-            <div class="lg:col-span-8 flex flex-col gap-3">
-
-                <!-- 1. 무기 정보 -->
-                <div class="card-panel">
-                    <div class="card-header">
-                        <i class="fa-solid fa-gun text-rose-400"></i> 무기 정보
-                    </div>
-
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                        <div class="bg-slate-900/80 p-2 rounded-lg border border-slate-700">
-                            <label class="text-xs text-slate-300 block mb-1 font-semibold">무기 타입</label>
-                            <select id="cmbWeaponType" class="sim-input bg-slate-950 font-bold" onchange="calculateAll()">
-                                <option value="원거리">원거리 (기술 영향)</option>
-                                <option value="근거리">근거리 (체력 영향)</option>
-                            </select>
-                        </div>
-
-                        <div class="bg-slate-900/80 p-2 rounded-lg border border-slate-700">
-                            <label class="text-xs text-slate-300 block mb-1 font-semibold">무기 크기</label>
-                            <select id="cmbWeaponSize" class="sim-input bg-slate-950 font-bold" onchange="calculateAll()">
-                                <option value="소형">소형</option>
-                                <option value="중형" selected>중형</option>
-                                <option value="대형">대형</option>
-                            </select>
-                        </div>
-
-                        <div class="bg-slate-900/80 p-2 rounded-lg border border-slate-700">
-                            <label class="text-xs text-slate-300 block mb-1 font-semibold">무기 공격력</label>
-                            <input type="number" id="txtWeaponDmg" class="sim-input font-extrabold text-rose-400 text-sm" value="0" oninput="calculateAll()">
-                        </div>
-
-                        <div class="bg-slate-900/80 p-2 rounded-lg border border-slate-700">
-                            <label class="text-xs text-slate-300 block mb-1 font-semibold">무기 치명타</label>
-                            <input type="number" id="txtWeaponCrit" class="sim-input font-extrabold text-amber-400 text-sm" value="0" oninput="calculateAll()">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. 장비 및 코스튬 / 날개 정보 테이블 -->
-                <div class="card-panel overflow-hidden">
-                    <div class="card-header justify-between">
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-shirt text-indigo-400"></i> 장비, 액세서리 & 코스튬/날개</span>
-                        <span class="text-xs text-slate-300 font-normal">수치 입력 시 실시간으로 계산됩니다</span>
-                    </div>
-
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-center border-collapse gear-table">
-                            <thead>
-                                <tr class="border-b border-slate-700">
-                                    <th class="text-left pl-3 py-2 w-28">구분</th>
-                                    <th>방어력 (%)</th>
-                                    <th>회피도</th>
-                                    <th>치명타</th>
-                                    <th>공격력 (%)</th>
-                                    <th>체력 (HP)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-slate-800/80 text-xs sm:text-sm">
-
-                                <!-- [방어구 Group] -->
-                                <tr class="bg-indigo-950/60 font-bold text-indigo-200">
-                                    <td colspan="6" class="py-1.5 text-left pl-3 text-xs tracking-wider uppercase border-y border-indigo-900/60">
-                                        <i class="fa-solid fa-shield-halved mr-1"></i> 방 어 구 (8슬롯)
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="text-left pl-3 font-bold text-slate-200">모자</td>
-                                    <td><input type="number" id="txtCapDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCapEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCapCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCapAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCapHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">코트</td>
-                                    <td><input type="number" id="txtCoatDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCoatEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCoatCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCoatAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCoatHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">가발</td>
-                                    <td><input type="number" id="txtWigDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWigEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWigCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWigAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWigHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">셔츠</td>
-                                    <td><input type="number" id="txtShirtDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShirtEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShirtCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShirtAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShirtHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">바지</td>
-                                    <td><input type="number" id="txtPantsDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtPantsEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtPantsCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtPantsAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtPantsHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">속옷/변이</td>
-                                    <td><input type="number" id="txtUnderDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtUnderEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtUnderCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtUnderAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtUnderHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">신발</td>
-                                    <td><input type="number" id="txtShoesDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShoesEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShoesCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShoesAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShoesHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">방패</td>
-                                    <td><input type="number" id="txtShieldDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShieldEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShieldCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShieldAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtShieldHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-
-                                <!-- 방어구 소계 -->
-                                <tr class="bg-slate-900 font-bold border-t border-slate-700">
-                                    <td class="text-left pl-3 text-slate-400">방어구 소계</td>
-                                    <td><input type="text" id="txtArmorSubDef" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtArmorSubEvasion" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtArmorSubCrit" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtArmorSubAtkPer" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtArmorSubHp" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                </tr>
-
-                                <!-- [액세서리 Group] -->
-                                <tr class="bg-emerald-950/40 font-bold text-emerald-300">
-                                    <td colspan="6" class="py-1 text-left pl-3 text-[10px] tracking-wider uppercase border-y border-emerald-900/40">
-                                        <i class="fa-solid fa-gem mr-1"></i> 액 세 서 리 (9슬롯)
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">환생악세</td>
-                                    <td><input type="number" id="txtAccRebornDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRebornEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRebornCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRebornAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRebornHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">토이</td>
-                                    <td><input type="number" id="txtAccToyDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccToyEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccToyCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccToyAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccToyHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">타로</td>
-                                    <td><input type="number" id="txtAccTaroDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccTaroEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccTaroCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccTaroAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccTaroHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">귀걸이</td>
-                                    <td><input type="number" id="txtAccEarDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccEarEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccEarCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccEarAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccEarHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">목걸이</td>
-                                    <td><input type="number" id="txtAccNeckDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccNeckEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccNeckCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccNeckAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccNeckHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">팔찌</td>
-                                    <td><input type="number" id="txtAccBracDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBracEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBracCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBracAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBracHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">벨트</td>
-                                    <td><input type="number" id="txtAccBeltDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBeltEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBeltCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBeltAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccBeltHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">왼반지</td>
-                                    <td><input type="number" id="txtAccRingLeftDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingLeftEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingLeftCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingLeftAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingLeftHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">오른반지</td>
-                                    <td><input type="number" id="txtAccRingRightDef" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingRightEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingRightCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingRightAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtAccRingRightHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-
-                                <!-- 악세 소계 -->
-                                <tr class="bg-slate-900 font-bold border-t border-slate-700">
-                                    <td class="text-left pl-3 text-slate-400">악세 소계</td>
-                                    <td><input type="text" id="txtAccSubDef" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtAccSubEvasion" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtAccSubCrit" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtAccSubAtkPer" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                    <td><input type="text" id="txtAccSubHp" class="sim-input sim-input-readonly" readonly value="0"></td>
-                                </tr>
-
-                                <!-- [코스튬 / 날개 Group] -->
-                                <tr class="bg-amber-950/40 font-bold text-amber-300">
-                                    <td colspan="6" class="py-1 text-left pl-3 text-[10px] tracking-wider uppercase border-y border-amber-900/40">
-                                        <i class="fa-solid fa-feather mr-1"></i> 코 스 튬 / 날 개
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">코스튬</td>
-                                    <td><input type="number" id="txtCostumeDefPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCostumeEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCostumeCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCostumeAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtCostumeHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left pl-3 font-semibold text-slate-300">날개</td>
-                                    <td><input type="number" id="txtWingDefPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWingEvasion" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWingCrit" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWingAtkPer" class="sim-input" oninput="calculateAll()"></td>
-                                    <td><input type="number" id="txtWingHp" class="sim-input" oninput="calculateAll()"></td>
-                                </tr>
-
-                                <!-- 장비 종합 (최종 합산) -->
-                                <tr class="bg-slate-900 font-extrabold text-sky-400 border-t-2 border-sky-500/50">
-                                    <td class="text-left pl-3 text-sky-300">장비 종합</td>
-                                    <td><input type="text" id="txtTotalDef" class="sim-input font-bold text-sky-400 bg-slate-950 border-sky-900" readonly value="0"></td>
-                                    <td><input type="text" id="txtTotalEvasion" class="sim-input font-bold text-sky-400 bg-slate-950 border-sky-900" readonly value="0"></td>
-                                    <td><input type="text" id="txtTotalCrit" class="sim-input font-bold text-sky-400 bg-slate-950 border-sky-900" readonly value="0"></td>
-                                    <td><input type="text" id="txtTotalAtkPer" class="sim-input font-bold text-sky-400 bg-slate-950 border-sky-900" readonly value="0"></td>
-                                    <td><input type="text" id="txtTotalHp" class="sim-input font-bold text-sky-400 bg-slate-950 border-sky-900" readonly value="0"></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 3. 세팅 저장 / 불러오기 & 프로필 비교 컨트롤 패널 -->
-                <div class="card-panel flex flex-wrap items-center justify-between gap-3">
-
-                    <!-- Left: Profile Save & Load controls -->
-                    <div class="flex flex-wrap items-center gap-2">
-                        <div class="flex items-center gap-1.5">
-                            <span class="font-bold text-slate-300 text-[11px]"><i class="fa-solid fa-bookmark text-sky-400"></i> 세팅명:</span>
-                            <input type="text" id="txtProfileName" class="sim-input w-28 text-left bg-slate-950 border-slate-700" value="기본세팅" placeholder="세팅 이름">
-                            <button onclick="saveProfile()" class="px-2.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg text-xs transition flex items-center gap-1 shadow">
-                                <i class="fa-solid fa-floppy-disk"></i> 저장
-                            </button>
-                        </div>
-
-                        <div class="h-4 w-px bg-slate-700 mx-1 hidden sm:block"></div>
-
-                        <div class="flex items-center gap-1.5">
-                            <span class="font-bold text-slate-300 text-[11px]">목록:</span>
-                            <select id="cmbProfiles" class="sim-input w-32 bg-slate-950 border-slate-700 text-left" onchange="onProfileSelectChange()"></select>
-                            <button onclick="loadProfile()" class="px-2.5 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg text-xs transition flex items-center gap-1 shadow">
-                                <i class="fa-solid fa-folder-open"></i> 불러오기
-                            </button>
-                            <button onclick="deleteProfile()" class="px-2 py-1.5 bg-rose-950 hover:bg-rose-900 text-rose-300 border border-rose-800 font-bold rounded-lg text-xs transition">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Right: Comparison Modal Open Button -->
-                    <div class="flex items-center gap-2">
-                        <button onclick="openCompareModal()" class="px-3 py-1.5 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white font-bold rounded-lg text-xs transition shadow-md flex items-center gap-1.5 border border-amber-400/30">
-                            <i class="fa-solid fa-[#fa-code-compare] fa-code-compare"></i> 세팅 비교분석
-                        </button>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Modal for Settings Comparison -->
-    <div id="compareModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4 z-50">
-        <div class="bg-slate-900 rounded-2xl shadow-2xl max-w-2xl w-full p-5 border border-slate-700">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-4">
-                <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                    <i class="fa-solid fa-code-compare text-amber-400"></i> 저장된 세팅 상세 비교분석
-                </h3>
-                <button onclick="closeCompareModal()" class="text-slate-400 hover:text-slate-200 font-bold text-lg w-7 h-7 flex items-center justify-center rounded-lg hover:bg-slate-800">&times;</button>
-            </div>
-
-            <div class="grid grid-cols-2 gap-3 mb-4">
-                <div class="bg-slate-950 p-2 rounded-xl border border-slate-800">
-                    <label class="block font-bold mb-1 text-sky-400 text-[11px]">비교 기준 (A)</label>
-                    <select id="cmbCompareA" class="sim-input bg-slate-900 text-left p-1.5" onchange="updateComparison()"></select>
-                </div>
-                <div class="bg-slate-950 p-2 rounded-xl border border-slate-800">
-                    <label class="block font-bold mb-1 text-amber-400 text-[11px]">비교 대상 (B)</label>
-                    <select id="cmbCompareB" class="sim-input bg-slate-900 text-left p-1.5" onchange="updateComparison()"></select>
-                </div>
-            </div>
-
-            <div id="compareResultTable" class="overflow-x-auto border border-slate-800 rounded-xl bg-slate-950 p-3">
-                <!-- Dynamic Comparison Output -->
-            </div>
-
-            <div class="mt-4 flex justify-end">
-                <button onclick="closeCompareModal()" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-lg text-xs border border-slate-700">
-                    닫기
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript Calculation & Business Logic -->
-    <script>
-
-        // Base Stat Table (Level 1 to 160)
-        const BaseStatTable = {
-            1: 5, 2: 10, 3: 15, 4: 20, 5: 25, 6: 30, 7: 35, 8: 40, 9: 45, 10: 50,
-            11: 55, 12: 60, 13: 65, 14: 70, 15: 75, 16: 80, 17: 85, 18: 90, 19: 95, 20: 100,
-            21: 105, 22: 110, 23: 115, 24: 120, 25: 125, 26: 130, 27: 135, 28: 140, 29: 145, 30: 150,
-            31: 156, 32: 161, 33: 166, 34: 171, 35: 176, 36: 181, 37: 186, 38: 191, 39: 196, 40: 201,
-            41: 208, 42: 213, 43: 218, 44: 223, 45: 228, 46: 233, 47: 238, 48: 243, 49: 248, 50: 253,
-            51: 261, 52: 266, 53: 271, 54: 276, 55: 281, 56: 286, 57: 291, 58: 296, 59: 301, 60: 306,
-            61: 315, 62: 320, 63: 325, 64: 330, 65: 335, 66: 340, 67: 345, 68: 350, 69: 355, 70: 360,
-            71: 370, 72: 375, 73: 380, 74: 385, 75: 390, 76: 395, 77: 400, 78: 405, 79: 410, 80: 415,
-            81: 426, 82: 431, 83: 436, 84: 441, 85: 446, 86: 451, 87: 456, 88: 461, 89: 466, 90: 471,
-            91: 483, 92: 488, 93: 493, 94: 498, 95: 503, 96: 508, 97: 513, 98: 518, 99: 523, 100: 528,
-            101: 541, 102: 546, 103: 551, 104: 556, 105: 561, 106: 566, 107: 571, 108: 576, 109: 581, 110: 586,
-            111: 600, 112: 605, 113: 610, 114: 615, 115: 620, 116: 625, 117: 630, 118: 635, 119: 640, 120: 645,
-            121: 660, 122: 665, 123: 670, 124: 675, 125: 680, 126: 685, 127: 690, 128: 695, 129: 700, 130: 705,
-            131: 721, 132: 726, 133: 731, 134: 736, 135: 741, 136: 746, 137: 751, 138: 756, 139: 761, 140: 766,
-            141: 783, 142: 788, 143: 793, 144: 798, 145: 803, 146: 808, 147: 813, 148: 818, 149: 823, 150: 828,
-            151: 846, 152: 851, 153: 856, 154: 861, 155: 866, 156: 871, 157: 876, 158: 881, 159: 886, 160: 891
-        };
-
-        // Reborn Bonus Stat Table
-        const RebornStatTable = {
-            105: 5, 106: 5, 107: 5, 108: 7, 109: 7, 110: 7, 111: 9, 112: 9, 113: 9, 114: 11,
-            115: 11, 116: 11, 117: 13, 118: 13, 119: 13, 120: 15, 121: 15, 122: 15, 123: 17, 124: 17,
-            125: 17, 126: 19, 127: 19, 128: 19, 129: 21, 130: 21, 131: 21, 132: 23, 133: 23, 134: 23,
-            135: 25, 136: 25, 137: 25, 138: 27, 139: 27, 140: 27, 141: 29, 142: 29, 143: 29, 144: 31,
-            145: 31, 146: 31, 147: 31, 148: 31, 149: 31, 150: 31, 151: 31, 152: 31, 153: 31, 154: 31,
-            155: 31, 156: 31, 157: 31, 158: 31, 159: 31, 160: 31
-        };
-
-        // Helper parsers
-        function getVal(id) {
-            const el = document.getElementById(id);
-            if (!el) return 0;
-            if (el.type === 'checkbox') return el.checked;
-            const val = parseFloat(el.value);
-            return isNaN(val) ? 0 : val;
-        }
-
-        function setVal(id, val) {
-            const el = document.getElementById(id);
-            if (!el) return;
-            if (el.type === 'checkbox') {
-                el.checked = Boolean(val);
-            } else {
-                el.value = val;
-            }
-        }
-
-        function sumValues(ids) {
-            return ids.reduce((acc, id) => acc + getVal(id), 0);
-        }
-
-        // Main Simulation Calculation Engine
-        function calculateAll() {
-            // 1. Level & Total Stat Calculation
-            const currentLevel = getVal('txtCurrentLevel');
-            const baseStat = BaseStatTable[currentLevel] || 0;
-
-            const rebornLevels = [
-                getVal('txtReborn1'), getVal('txtReborn2'), getVal('txtReborn3'),
-                getVal('txtReborn4'), getVal('txtReborn5'), getVal('txtReborn6'),
-                getVal('txtReborn7'), getVal('txtReborn8'), getVal('txtReborn9'), getVal('txtReborn10')
-            ];
-
-            let rebornStatSum = 0;
-            rebornLevels.forEach(lvl => {
-                if (lvl > 104 && RebornStatTable[lvl]) {
-                    rebornStatSum += RebornStatTable[lvl];
-                }
-            });
-
-            const totalStat = baseStat + rebornStatSum + 30;
-            setVal('txtTotalStat', totalStat);
-
-            const statHp = getVal('txtStatHp');
-            const statHealth = getVal('txtStatHealth');
-            const statStamina = getVal('txtStatStamina');
-            const statSkill = getVal('txtStatSkill');
-            const statInt = getVal('txtStatInt');
-            const statSpeed = getVal('txtStatSpeed');
-
-            const allocatedSum = statHp + statHealth + statStamina + statSkill + statInt + statSpeed;
-            const remainStat = totalStat - allocatedSum;
-
-            const txtRemainStat = document.getElementById('txtRemainStat');
-            const boxRemainStat = document.getElementById('boxRemainStat');
-            txtRemainStat.value = remainStat;
-
-            if (remainStat < 0) {
-                txtRemainStat.className = "bg-transparent border-0 font-bold text-rose-400 text-right w-16 focus:outline-none animate-pulse";
-                boxRemainStat.className = "bg-rose-950/40 p-2 rounded-lg border border-rose-800 flex justify-between items-center";
-            } else {
-                txtRemainStat.className = "bg-transparent border-0 font-bold text-sky-400 text-right w-16 focus:outline-none";
-                boxRemainStat.className = "bg-slate-900 p-2 rounded-lg border border-slate-800 flex justify-between items-center";
-            }
-
-            // 2. Armor Subtotals
-            const armorDef = sumValues(['txtCapDef', 'txtCoatDef', 'txtWigDef', 'txtShirtDef', 'txtPantsDef', 'txtUnderDef', 'txtShoesDef', 'txtShieldDef']);
-            const armorEvasion = sumValues(['txtCapEvasion', 'txtCoatEvasion', 'txtWigEvasion', 'txtShirtEvasion', 'txtPantsEvasion', 'txtUnderEvasion', 'txtShoesEvasion', 'txtShieldEvasion']);
-            const armorCrit = sumValues(['txtCapCrit', 'txtCoatCrit', 'txtWigCrit', 'txtShirtCrit', 'txtPantsCrit', 'txtUnderCrit', 'txtShoesCrit', 'txtShieldCrit']);
-            const armorAtkPer = sumValues(['txtCapAtkPer', 'txtCoatAtkPer', 'txtWigAtkPer', 'txtShirtAtkPer', 'txtPantsAtkPer', 'txtUnderAtkPer', 'txtShoesAtkPer', 'txtShieldAtkPer']);
-            const armorHp = sumValues(['txtCapHp', 'txtCoatHp', 'txtWigHp', 'txtShirtHp', 'txtPantsHp', 'txtUnderHp', 'txtShoesHp', 'txtShieldHp']);
-
-            setVal('txtArmorSubDef', armorDef);
-            setVal('txtArmorSubEvasion', armorEvasion);
-            setVal('txtArmorSubCrit', armorCrit);
-            setVal('txtArmorSubAtkPer', armorAtkPer);
-            setVal('txtArmorSubHp', armorHp);
-
-            // 3. Accessory Subtotals
-            const accDef = sumValues(['txtAccRebornDef', 'txtAccToyDef', 'txtAccTaroDef', 'txtAccEarDef', 'txtAccNeckDef', 'txtAccBracDef', 'txtAccBeltDef', 'txtAccRingLeftDef', 'txtAccRingRightDef']);
-            const accEvasion = sumValues(['txtAccRebornEvasion', 'txtAccToyEvasion', 'txtAccTaroEvasion', 'txtAccEarEvasion', 'txtAccNeckEvasion', 'txtAccBracEvasion', 'txtAccBeltEvasion', 'txtAccRingLeftEvasion', 'txtAccRingRightEvasion']);
-            const accCrit = sumValues(['txtAccRebornCrit', 'txtAccToyCrit', 'txtAccTaroCrit', 'txtAccEarCrit', 'txtAccNeckCrit', 'txtAccBracCrit', 'txtAccBeltCrit', 'txtAccRingLeftCrit', 'txtAccRingRightCrit']);
-            const accAtkPer = sumValues(['txtAccRebornAtkPer', 'txtAccToyAtkPer', 'txtAccTaroAtkPer', 'txtAccEarAtkPer', 'txtAccNeckAtkPer', 'txtAccBracAtkPer', 'txtAccBeltAtkPer', 'txtAccRingLeftAtkPer', 'txtAccRingRightAtkPer']);
-            const accHp = sumValues(['txtAccRebornHp', 'txtAccToyHp', 'txtAccTaroHp', 'txtAccEarHp', 'txtAccNeckHp', 'txtAccBracHp', 'txtAccBeltHp', 'txtAccRingLeftHp', 'txtAccRingRightHp']);
-
-            setVal('txtAccSubDef', accDef);
-            setVal('txtAccSubEvasion', accEvasion);
-            setVal('txtAccSubCrit', accCrit);
-            setVal('txtAccSubAtkPer', accAtkPer);
-            setVal('txtAccSubHp', accHp);
-
-            // 4. Costume & Wings
-            const costumeDefPer = getVal('txtCostumeDefPer') + getVal('txtWingDefPer');
-            const costumeEvasion = getVal('txtCostumeEvasion') + getVal('txtWingEvasion');
-            const costumeCrit = getVal('txtCostumeCrit') + getVal('txtWingCrit');
-            const costumeAtkPer = getVal('txtCostumeAtkPer') + getVal('txtWingAtkPer');
-            const costumeHp = getVal('txtCostumeHp') + getVal('txtWingHp');
-
-            // 5. Total Combined Equipment Values
-            const totalDef = armorDef + accDef;
-            const totalEvasion = armorEvasion + accEvasion + costumeEvasion;
-            const totalCrit = armorCrit + accCrit + costumeCrit;
-            const totalAtkPer = armorAtkPer + accAtkPer + costumeAtkPer;
-            const totalHp = armorHp + accHp + costumeHp;
-
-            setVal('txtTotalDef', totalDef);
-            setVal('txtTotalEvasion', totalEvasion);
-            setVal('txtTotalCrit', totalCrit);
-            setVal('txtTotalAtkPer', totalAtkPer);
-            setVal('txtTotalHp', totalHp);
-
-            // 6. Attack Calculation
-            const race = document.getElementById('cmbRace').value;
-            const weaponType = document.getElementById('cmbWeaponType').value;
-            const weaponDmg = getVal('txtWeaponDmg');
-            const weaponCrit = getVal('txtWeaponCrit');
-
-            const atkUnlock = getVal('txtAtkUnlock');
-            const atkAchieve = getVal('txtAtkAchieve');
-            const defUnlock = getVal('txtDefUnlock');
-            const defAchieve = getVal('txtDefAchieve');
-            const hpUnlock = getVal('txtHpUnlock');
-            const hpAchieve = getVal('txtHpAchieve');
-
-            const isAtkAmp = getVal('chkAtkAmp');
-            const isDefAmp = getVal('chkDefAmp');
-            const isPremDef = getVal('chkPremDef');
-            const isHouseAtk = getVal('chkHouseAtk');
-            const isHouseDef = getVal('chkHouseDef');
-            const isHouseHp = getVal('chkHouseHp');
-            const isHpBuff1000 = getVal('chkHpBuff1000');
-            const isHpBuff2000 = getVal('chkHpBuff2000');
-            const champAtkBuff = getVal('txtChampAtkBuff');
-
-            const totalAtkBonusPer = totalAtkPer + champAtkBuff;
-            const mainStat = (weaponType === '원거리') ? statSkill : statHealth;
-
-            let finalAtk = (weaponDmg * (1.0 + (mainStat / 100.0)) + mainStat)
-                * (1.0 + (totalAtkBonusPer / 100.0))
-                * (1.0 + (atkUnlock / 100.0))
-                * (1.0 + (atkAchieve / 100.0));
-
-            if (isAtkAmp) finalAtk *= 1.2;
-            if (isHouseAtk) finalAtk *= 1.05;
-            if (race === '변이') finalAtk *= 1.3;
-
-            // 7. Defense Calculation
-            const baseDef = totalDef;
-            const baseDef2 = Math.floor(baseDef * (1.0 + (statStamina / 100.0)));
-            let finalDef = baseDef2 * (1.0 + (costumeDefPer / 100.0)) * (1.0 + (defUnlock / 100.0)) * (1.0 + (defAchieve / 100.0));
-
-            if (isDefAmp) finalDef *= 1.2;
-            if (isPremDef) finalDef *= 1.2;
-            if (isHouseDef) finalDef *= 1.05;
-
-            // 8. HP Calculation
-            const levelBonusHp = currentLevel * 3;
-            let baseHpFromStat = ((currentLevel - 1) + (statHealth - 5)) * 9 + 154 + levelBonusHp;
-
-            if (race === '변이') {
-                baseHpFromStat *= 0.7;
-            }
-
-            let calculatedHp = (baseHpFromStat + totalHp)
-                * (1.0 + (hpUnlock / 100.0))
-                * (1.0 + (hpAchieve / 100.0));
-
-            if (isHouseHp) calculatedHp += 500;
-            if (isHpBuff1000) calculatedHp += 1000;
-            if (isHpBuff2000) calculatedHp += 2000;
-
-            const finalHp = calculatedHp;
-
-            // 9. Auxiliary Stats
-            const rawEvasion = (totalEvasion / 10.0) * (1.0 + (statSpeed / 100.0)) + (statSpeed / 10.0) + 1;
-            const finalEvasion = Math.min(50, Math.floor(rawEvasion));
-
-            const rawCrit = 1 + (weaponCrit / 5.0) * (1.0 + (statSkill / 100.0)) + totalCrit;
-            const finalCrit = Math.min(50, Math.floor(rawCrit));
-
-            let recovery = 0;
-            if (statHp >= 9) {
-                recovery = Math.min(50, (Math.floor(Math.sqrt(statHp)) - 2) * 5);
-            }
-
-            const skillRank = Math.floor((currentLevel + statInt * 2) / 3);
-
-            // 10. Update Dashboard Outputs
-            setVal('txtResultAtk', Math.round(finalAtk).toLocaleString());
-            setVal('txtResultDef', Math.round(finalDef).toLocaleString());
-            setVal('txtResultHp', Math.round(finalHp).toLocaleString());
-
-            setVal('txtResultEvasion', finalEvasion + '%');
-            setVal('txtResultCrit', finalCrit + '%');
-            setVal('txtResultRecovery', recovery);
-
-            setVal('txtResultSkillRank', skillRank);
-        }
-
-        // Profile Management System
-        const STORAGE_KEY = 'eternal_city_sim_profiles';
-
-        function getAllProfiles() {
-            try {
-                const data = localStorage.getItem(STORAGE_KEY);
-                return data ? JSON.parse(data) : {};
-            } catch (e) {
-                return {};
-            }
-        }
-
-        function saveAllProfiles(profiles) {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(profiles));
-            refreshProfileDropdown();
-        }
-
-        function getCurrentInputsState() {
-            const inputs = document.querySelectorAll('input, select');
-            const state = {};
-            inputs.forEach(el => {
-                if (!el.id || el.readOnly || el.id === 'txtProfileName') return;
-                if (el.type === 'checkbox') {
-                    state[el.id] = el.checked;
-                } else {
-                    state[el.id] = el.value;
-                }
-            });
-            return state;
-        }
-
-        function saveProfile() {
-            const nameInput = document.getElementById('txtProfileName');
-            const profileName = nameInput.value.trim();
-            if (!profileName) return;
-
-            const profiles = getAllProfiles();
-            profiles[profileName] = getCurrentInputsState();
-            saveAllProfiles(profiles);
-
-            document.getElementById('cmbProfiles').value = profileName;
-        }
-
-        function loadProfile() {
-            const select = document.getElementById('cmbProfiles');
-            const profileName = select.value;
-            if (!profileName) return;
-
-            const profiles = getAllProfiles();
-            const state = profiles[profileName];
-            if (!state) return;
-
-            Object.keys(state).forEach(id => {
-                setVal(id, state[id]);
-            });
-
-            document.getElementById('txtProfileName').value = profileName;
-            calculateAll();
-        }
-
-        function deleteProfile() {
-            const select = document.getElementById('cmbProfiles');
-            const profileName = select.value;
-            if (!profileName) return;
-
-            const profiles = getAllProfiles();
-            delete profiles[profileName];
-            saveAllProfiles(profiles);
-        }
-
-        function refreshProfileDropdown() {
-            const select = document.getElementById('cmbProfiles');
-            const compareA = document.getElementById('cmbCompareA');
-            const compareB = document.getElementById('cmbCompareB');
-
-            const profiles = getAllProfiles();
-            const keys = Object.keys(profiles);
-
-            select.innerHTML = '';
-            compareA.innerHTML = '';
-            compareB.innerHTML = '';
-
-            if (keys.length === 0) {
-                select.innerHTML = '<option value="">(저장된 세팅 없음)</option>';
-                compareA.innerHTML = '<option value="">(선택 안함)</option>';
-                compareB.innerHTML = '<option value="">(선택 안함)</option>';
-                return;
-            }
-
-            keys.forEach(k => {
-                const opt1 = new Option(k, k);
-                const opt2 = new Option(k, k);
-                const opt3 = new Option(k, k);
-                select.add(opt1);
-                compareA.add(opt2);
-                compareB.add(opt3);
-            });
-
-            if (keys.length > 1) {
-                compareB.selectedIndex = 1;
-            }
-        }
-
-        function onProfileSelectChange() {
-            const name = document.getElementById('cmbProfiles').value;
-            if (name) {
-                document.getElementById('txtProfileName').value = name;
-            }
-        }
-
-        // Full Reset Handler
-        function resetAll() {
-            setVal('txtCurrentLevel', 1);
-            for (let i = 1; i <= 10; i++) {
-                setVal('txtReborn' + i, 0);
-            }
-
-            setVal('txtStatHp', 5);
-            setVal('txtStatHealth', 5);
-            setVal('txtStatStamina', 5);
-            setVal('txtStatSkill', 5);
-            setVal('txtStatInt', 5);
-            setVal('txtStatSpeed', 5);
-
-            const cmbRace = document.getElementById('cmbRace');
-            if (cmbRace) cmbRace.value = '휴먼';
-            setVal('txtAtkUnlock', 0);
-            setVal('txtAtkAchieve', 0);
-            setVal('txtDefUnlock', 0);
-            setVal('txtDefAchieve', 0);
-            setVal('txtHpUnlock', 0);
-            setVal('txtHpAchieve', 0);
-
-            setVal('chkAtkAmp', false);
-            setVal('chkDefAmp', false);
-            setVal('chkHouseAtk', false);
-            setVal('chkHouseDef', false);
-            setVal('chkHouseHp', false);
-            setVal('chkPremDef', false);
-            setVal('chkHpBuff1000', false);
-            setVal('chkHpBuff2000', false);
-            setVal('txtChampAtkBuff', 0);
-
-            const cmbWeaponType = document.getElementById('cmbWeaponType');
-            if (cmbWeaponType) cmbWeaponType.value = '원거리';
-            const cmbWeaponSize = document.getElementById('cmbWeaponSize');
-            if (cmbWeaponSize) cmbWeaponSize.value = '중형';
-            setVal('txtWeaponDmg', 0);
-            setVal('txtWeaponCrit', 0);
-
-            const armorIds = ['Cap', 'Coat', 'Wig', 'Shirt', 'Pants', 'Under', 'Shoes', 'Shield'];
-            const armorFields = ['Def', 'Evasion', 'Crit', 'AtkPer', 'Hp'];
-            armorIds.forEach(id => {
-                armorFields.forEach(f => setVal('txt' + id + f, ''));
-            });
-
-            const accIds = ['AccReborn', 'AccToy', 'AccTaro', 'AccEar', 'AccNeck', 'AccBrac', 'AccBelt', 'RingLeft', 'RingRight'];
-            accIds.forEach(id => {
-                armorFields.forEach(f => setVal('txt' + id + f, ''));
-            });
-
-            const costumeIds = ['CostumeDefPer', 'CostumeEvasion', 'CostumeCrit', 'CostumeAtkPer', 'CostumeHp', 'WingDefPer', 'WingEvasion', 'WingCrit', 'WingAtkPer', 'WingHp'];
-            costumeIds.forEach(id => setVal('txt' + id, ''));
-
-            setVal('txtProfileName', '기본세팅');
-
-            calculateAll();
-        }
-
-        // Comparison Modal Operations
-        function openCompareModal() {
-            refreshProfileDropdown();
-            document.getElementById('compareModal').classList.remove('hidden');
-            document.getElementById('compareModal').classList.add('flex');
-            updateComparison();
-        }
-
-        function closeCompareModal() {
-            document.getElementById('compareModal').classList.add('hidden');
-            document.getElementById('compareModal').classList.remove('flex');
-        }
-
-        function calculateProfileState(state) {
-            const original = getCurrentInputsState();
-            Object.keys(state).forEach(id => setVal(id, state[id]));
-            calculateAll();
-
-            const result = {
-                atk: getVal('txtResultAtk'),
-                def: getVal('txtResultDef'),
-                hp: getVal('txtResultHp'),
-                evasion: getVal('txtResultEvasion'),
-                crit: getVal('txtResultCrit'),
-                recovery: getVal('txtResultRecovery'),
-                skillRank: getVal('txtResultSkillRank')
-            };
-
-            Object.keys(original).forEach(id => setVal(id, original[id]));
-            calculateAll();
-            return result;
-        }
-
-        function updateComparison() {
-            const profiles = getAllProfiles();
-            const nameA = document.getElementById('cmbCompareA').value;
-            const nameB = document.getElementById('cmbCompareB').value;
-            const container = document.getElementById('compareResultTable');
-
-            if (!nameA || !nameB || !profiles[nameA] || !profiles[nameB]) {
-                container.innerHTML = '<div class="text-center py-6 text-slate-500 font-medium">비교 분석할 저장된 세팅 프로필 2개를 선택해 주세요.</div>';
-                return;
-            }
-
-            const resA = calculateProfileState(profiles[nameA]);
-            const resB = calculateProfileState(profiles[nameB]);
-
-            const parseNum = (val) => parseFloat(String(val).replace(/,/g, '')) || 0;
-
-            const formatDiff = (vA, vB) => {
-                const diff = parseNum(vB) - parseNum(vA);
-                if (diff > 0) return `<span class="text-emerald-400 font-bold">+${diff.toLocaleString()} ▲</span>`;
-                if (diff < 0) return `<span class="text-rose-400 font-bold">${diff.toLocaleString()} ▼</span>`;
-                return `<span class="text-slate-500">동일</span>`;
-            };
-
-            container.innerHTML = `
-                    <table class="w-full text-center text-xs border-collapse">
-                        <thead>
-                            <tr class="bg-slate-900 border-b border-slate-800 text-slate-400">
-                                <th class="p-2 text-left pl-3">스탯 항목</th>
-                                <th class="p-2 text-sky-400">${nameA} (A)</th>
-                                <th class="p-2 text-amber-400">${nameB} (B)</th>
-                                <th class="p-2">수치 차이 (B - A)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-800/80">
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">공격력</td><td class="font-bold text-slate-200">${resA.atk}</td><td class="font-bold text-slate-200">${resB.atk}</td><td>${formatDiff(resA.atk, resB.atk)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">방어력</td><td class="font-bold text-slate-200">${resA.def}</td><td class="font-bold text-slate-200">${resB.def}</td><td>${formatDiff(resA.def, resB.def)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">체력 (HP)</td><td class="font-bold text-slate-200">${resA.hp}</td><td class="font-bold text-slate-200">${resB.hp}</td><td>${formatDiff(resA.hp, resB.hp)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">회피율</td><td class="font-bold text-slate-200">${resA.evasion}</td><td class="font-bold text-slate-200">${resB.evasion}</td><td>${formatDiff(resA.evasion, resB.evasion)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">치명율</td><td class="font-bold text-slate-200">${resA.crit}</td><td class="font-bold text-slate-200">${resB.crit}</td><td>${formatDiff(resA.crit, resB.crit)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">의식회복</td><td class="font-bold text-slate-200">${resA.recovery}</td><td class="font-bold text-slate-200">${resB.recovery}</td><td>${formatDiff(resA.recovery, resB.recovery)}</td></tr>
-                            <tr><td class="p-2.5 font-bold text-left pl-3 text-slate-300">기술등급</td><td class="font-bold text-slate-200">${resA.skillRank}</td><td class="font-bold text-slate-200">${resB.skillRank}</td><td>${formatDiff(resA.skillRank, resB.skillRank)}</td></tr>
-                        </tbody>
-                    </table>
-                `;
-        }
-
-        // Initialization
-        window.onload = function () {
+        window.onload = function() {
             const profiles = getAllProfiles();
             if (Object.keys(profiles).length === 0) {
                 profiles['기본 세팅'] = getCurrentInputsState();

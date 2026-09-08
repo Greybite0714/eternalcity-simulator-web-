@@ -168,14 +168,23 @@
             const totalAtkBonusPer = totalAtkPer + champAtkBuff;
             const mainStat = (weaponType === '원거리') ? statSkill : statHealth;
 
-            let finalAtk = (weaponDmg * (1.0 + (mainStat / 100.0)) + mainStat)
-                            * (1.0 + (totalAtkBonusPer / 100.0))
-                            * (1.0 + (atkUnlock / 100.0))
-                            * (1.0 + (atkAchieve / 100.0));
+            // Excel formula parity: ROUNDDOWN is applied after the base stat
+            // calculation, after percentage modifiers, and after buff modifiers.
+            const baseAtk = Math.floor(
+                weaponDmg * (1.0 + (mainStat / 100.0)) + mainStat
+            );
+            const atkAfterPercentModifiers = Math.floor(
+                baseAtk
+                * (1.0 + (totalAtkBonusPer / 100.0))
+                * (1.0 + (atkUnlock / 100.0))
+                * (1.0 + (atkAchieve / 100.0))
+            );
 
+            let finalAtk = atkAfterPercentModifiers;
+            if (race === '변이') finalAtk *= 1.3;
             if (isAtkAmp) finalAtk *= 1.2;
             if (isHouseAtk) finalAtk *= 1.05;
-            if (race === '변이') finalAtk *= 1.3;
+            finalAtk = Math.floor(finalAtk);
 
             // 7. Defense Calculation
             const baseDef = totalDef;
@@ -219,7 +228,7 @@
             const skillRank = Math.floor((currentLevel + statInt * 2) / 3);
 
             // 10. Update Dashboard Outputs
-            setVal('txtResultAtk', Math.round(finalAtk).toLocaleString());
+            setVal('txtResultAtk', finalAtk.toLocaleString());
             setVal('txtResultDef', Math.round(finalDef).toLocaleString());
             setVal('txtResultHp', Math.round(finalHp).toLocaleString());
 
